@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-  margin: 40px 20px 0px 20px;
+    margin: 40px 20px 0px 20px;
     font-size: 0;
 }
 
@@ -47,8 +47,9 @@ li {
 
 .navbar {
     height: 45px;
-    width: 70%;
-    text-align: left;
+    width: 60%;
+    text-align: center;
+    align-content:center ;
     color: #025157;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
@@ -62,13 +63,14 @@ li {
     margin: 0px 10px;
 }
 
-.actions>*{
+.actions>* {
     margin: 0px 10px;
 }
+
 .actions a {
     color: #67b54b;
     font-family: sans-serif;
-  }
+}
 
 .actions button {
     color: white;
@@ -76,9 +78,57 @@ li {
     padding: 14px 12px;
     border-style: none;
     border-radius: 5px;
-  }
+}
 
-.main{
-    margin-top: 140px;
+.main {
+    margin-top: 285px;
     text-align: center;
+}
+
+.publish{
+    display:flex;
+    width:70%;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    margin: 100px auto;
+   
+}
+
+.publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+    text-align: left;
+    margin-left: 1.2%;
+    margin-top: -0.2%;
+}
+
+.publish p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 1.2%;
+}
+
+.publish form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publish img{
+    width: 10%;
+    transform: rotate(35deg);
+}
+
+.fixed-header{
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
