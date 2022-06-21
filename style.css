@@ -13,6 +13,12 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
+h2 {
+    color: #025157;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
 p {
     color: #8b8b8bcc;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -56,7 +62,6 @@ li {
 }
 
 .actions {
-
     text-align: right;
     font-size: 14px;
     font-weight: 600;
@@ -81,37 +86,46 @@ li {
 }
 
 .main {
-    margin-top: 285px;
+    margin-top: 15%;
     text-align: center;
 }
 
-.publish{
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.intro .publish{
     display:flex;
     width:70%;
     justify-content: center;
-    align-items:center;
+    align-items:flex-start;
     flex-direction: row;
     margin: 100px auto;
-   
+    gap: 50px;
 }
 
-.publish h3 {
-    font-family: "Alegreya", serif;
+.intro .publish  h2 {
+    font-family: "Open Sans", sans-serif;
     font-size: 40px;
     line-height: 48px;
+    font-weight: 500;
     color: #025157;
     text-align: left;
-    margin-left: 1.2%;
-    margin-top: -0.2%;
 }
 
-.publish p {
+.intro .publish p {
     font-size: 16px;
     color: #343434;
     line-height: 1.5;
     margin-bottom: 20px;
     text-align: justify;
-    margin-left: 1.2%;
+}
+
+.intro main{
+    margin-top: 22px;
 }
 
 .publish form {
@@ -125,10 +139,168 @@ li {
     transform: rotate(35deg);
 }
 
+.publish video{
+    margin-top: 10%;
+}
+
 .fixed-header{
     position:fixed;
     top:0;
     left: 0;
     right: 0;
     background-color: #fffbf7;
+}
+
+.second{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    flex-direction: row;
+    margin: 100px auto;
+    gap: 50px;
+}
+
+.container{
+    border-radius: 20px;
+    width: 260px;
+    height: 30vw;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0px 0px 10px 1px #bababa;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container .item{
+    flex: 0 0 260px;
+    width: 260 px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#000;
+}
+
+.container img{
+    width:100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.container .text{
+    background-color:#fffbf7;
+    margin-top: -30px;
+    text-align: left;
+    padding: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+}
+
+.container .text h2{
+    color: #025157;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+
+.second .links>*{
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 7px;
+  width: 7px;
+  background-color: #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  border-style: solid;
+  border-color: #025157;
+  border-width: 2px;
+}
+
+.second .links>*:active{
+    background-color:#025157;
+}
+
+.container .btnstudy {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.container button{
+    background: #025157;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: none;
+    margin-top: 25px;
+}
+
+.container button:hover{
+    background:#67b54b;
+    cursor:pointer;
+}
+
+.second .blog{
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.second .blog h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #025157;
+    text-align: left;
+}
+.second .blog  p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.second .blog button{
+    background: #025157;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: none;
+    margin-top: 25px;
+}
+
+.second .blog button:hover{
+    background:#67b54b;
+    cursor:pointer;
 }
