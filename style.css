@@ -55,10 +55,11 @@ li {
     height: 45px;
     width: 60%;
     text-align: center;
-    align-content:center ;
+    align-content: center;
     color: #025157;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
+    background-color: #fffbf7;
 }
 
 .actions {
@@ -90,24 +91,24 @@ li {
     text-align: center;
 }
 
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
-.intro .publish{
-    display:flex;
-    width:70%;
+.intro .publish {
+    display: flex;
+    width: 70%;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-direction: row;
     margin: 100px auto;
     gap: 50px;
 }
 
-.intro .publish  h2 {
+.intro .publish h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 40px;
     line-height: 48px;
@@ -124,7 +125,7 @@ li {
     text-align: justify;
 }
 
-.intro main{
+.intro main {
     margin-top: 22px;
 }
 
@@ -134,24 +135,56 @@ li {
     align-items: center;
 }
 
-.publish img{
+.publish img {
     width: 10%;
     transform: rotate(35deg);
 }
 
-.publish video{
+.publish video {
     margin-top: 10%;
 }
 
-.fixed-header{
-    position:fixed;
-    top:0;
+.fixed-header {
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     background-color: #fffbf7;
 }
 
-.second{
+.blob--cases {
+    left: -727.27273px;
+    top: -438.09524px;
+    -webkit-transform: rotate(104deg);
+    -ms-transform: rotate(104deg);
+    transform: rotate(97deg);
+}
+
+.blob svg {
+    position: absolute;
+    z-index: -1;
+    width: 1600px;
+    height: 1840px;
+    display: inline-block;
+    -webkit-filter: drop-shadow(0 0 40px rgba(0, 0, 0, .3));
+    filter: drop-shadow(0 0 40px rgba(0, 0, 0, .3));
+    cursor: default !important;
+}
+
+.blob svg path {
+    -webkit-animation: blobJiggle 7.5s infinite linear;
+    animation: blobJiggle 7.5s infinite linear;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.second {
+    position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -162,7 +195,7 @@ li {
     gap: 50px;
 }
 
-.container{
+.container {
     border-radius: 20px;
     width: 260px;
     height: 30vw;
@@ -172,30 +205,31 @@ li {
     justify-content: flex-start;
     align-items: flex-start;
     box-shadow: 0px 0px 10px 1px #bababa;
+    background-color: #fffbf7;
 }
 
 .container::-webkit-scrollbar {
     display: none;
 }
 
-.container .item{
+.container .item {
     flex: 0 0 260px;
     width: 260 px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color:#000;
+    color: #000;
 }
 
-.container img{
-    width:100%;
+.container img {
+    width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
-.container .text{
-    background-color:#fffbf7;
+.container .text {
+    background-color: #fffbf7;
     margin-top: -30px;
     text-align: left;
     padding: 10%;
@@ -203,7 +237,7 @@ li {
     font-size: larger;
 }
 
-.container .text h2{
+.container .text h2 {
     color: #025157;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
@@ -211,22 +245,21 @@ li {
     margin-bottom: 20px;
 }
 
-
-.second .links>*{
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 7px;
-  width: 7px;
-  background-color: #FFF;
-  border-radius: 50%;
-  display: inline-block;
-  border-style: solid;
-  border-color: #025157;
-  border-width: 2px;
+.links>* {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 7px;
+    width: 7px;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: #025157;
+    border-width: 2px;
 }
 
-.second .links>*:active{
-    background-color:#025157;
+.links>*:active {
+    background-color: #025157;
 }
 
 .container .btnstudy {
@@ -237,7 +270,8 @@ li {
     justify-content: flex-start;
     align-items: flex-end;
 }
-.container button{
+
+.container button {
     background: #025157;
     border-radius: 5px;
     font-style: normal;
@@ -254,12 +288,12 @@ li {
     margin-top: 25px;
 }
 
-.container button:hover{
-    background:#67b54b;
-    cursor:pointer;
+.container button:hover {
+    background: #67b54b;
+    cursor: pointer;
 }
 
-.second .blog{
+.second .blog {
     display: flex;
     text-align: left;
     align-items: flex-start;
@@ -275,7 +309,8 @@ li {
     color: #025157;
     text-align: left;
 }
-.second .blog  p {
+
+.second .blog p {
     font-size: 16px;
     color: #343434;
     line-height: 1.5;
@@ -283,7 +318,7 @@ li {
     text-align: justify;
 }
 
-.second .blog button{
+.second .blog button {
     background: #025157;
     border-radius: 5px;
     font-style: normal;
@@ -300,7 +335,73 @@ li {
     margin-top: 25px;
 }
 
-.second .blog button:hover{
-    background:#67b54b;
-    cursor:pointer;
+.second .blog button:hover {
+    background: #67b54b;
+    cursor: pointer;
 }
+
+.grid {
+    position: relative;
+    background-color: #025157;
+    padding: 5% 10%;
+    display: grid;
+    height: 660px;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.grid .grid-space {
+    text-align: left;
+    margin: 2%;
+    padding: 3%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.grid .grid-space .grid-content {
+    padding: 2%;
+    flex: content;
+  }
+  
+  .grid .grid-space .grid-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  .grid .grid-space .grid-content img {
+    width: 40px;
+  }
+  
+  .grid .grid-space .grid-content h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+  }
+  
+  .grid .grid-space .grid-content p {
+    font-size: 17px;
+    color: #7e7e7e;
+    font-weight: 400;
+  }
+  
+  .grid .grid-space .grid-content a {
+    font-size: 17px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .grid .grid-space .grid-image {
+    width: 40%;
+    position: relative;
+    right: -7%;
+    height: 80%;
+  }
+  
+  .grid .grid-space .grid-image figure,
+  .grid .grid-space .grid-image img {
+    position: relative;
+    margin-top: 0;
+    height: 12em;
+  }
