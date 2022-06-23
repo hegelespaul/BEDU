@@ -52,14 +52,14 @@ li {
 }
 
 .navbar {
+    position: relative;
     height: 45px;
     width: 60%;
     text-align: center;
-    align-content: center;
     color: #025157;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-    background-color: #fffbf7;
+    padding: 1%;
 }
 
 .actions {
@@ -149,7 +149,6 @@ li {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fffbf7;
 }
 
 .blob--cases {
@@ -198,7 +197,7 @@ svg:not(:root) {
 .container {
     border-radius: 20px;
     width: 260px;
-    height: 30vw;
+    height: 32rem;
     overflow-y: hidden;
     overflow-x: auto;
     display: flex;
@@ -362,46 +361,139 @@ svg:not(:root) {
 .grid .grid-space .grid-content {
     padding: 2%;
     flex: content;
-  }
-  
-  .grid .grid-space .grid-content > * {
+}
+
+.grid .grid-space .grid-content>* {
     margin-bottom: 1rem;
     margin-top: 0;
-  }
-  
-  .grid .grid-space .grid-content img {
+}
+
+.grid .grid-space .grid-content img {
     width: 40px;
-  }
-  
-  .grid .grid-space .grid-content h3 {
+}
+
+.grid .grid-space .grid-content h3 {
     font-size: 24px;
     color: #343434;
     font-weight: 400;
-  }
-  
-  .grid .grid-space .grid-content p {
+}
+
+.grid .grid-space .grid-content p {
     font-size: 17px;
     color: #7e7e7e;
     font-weight: 400;
-  }
-  
-  .grid .grid-space .grid-content a {
+}
+
+.grid .grid-space .grid-content a {
     font-size: 17px;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
-  }
-  
-  .grid .grid-space .grid-image {
+}
+
+.grid .grid-space .grid-image {
     width: 40%;
     position: relative;
     right: -7%;
     height: 80%;
-  }
-  
-  .grid .grid-space .grid-image figure,
-  .grid .grid-space .grid-image img {
+}
+
+.grid .grid-space .grid-image figure,
+.grid .grid-space .grid-image img {
     position: relative;
     margin-top: 0;
     height: 12em;
-  }
+}
+
+.Who {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin: 100px auto;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Who .gallery {
+    display: grid;
+    height: 660px;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Who .gallery img {
+    height: 40%;
+    filter: hue-rotate(-90deg);
+    filter: brightness(1.1);
+    filter: drop-shadow(6px 0px 2px #ebf9e9);
+    margin-bottom: 20px;
+}
+
+.Who .gallery>*{
+    box-shadow: 0px 0px 10px 1px #bababa;
+    border-radius: 20px;
+    height: 560px;
+    text-align: left;
+    background-color: #FFF;
+}
+
+.Who h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #025157;
+    text-align: center;
+}
+
+.Who p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Who h3 {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #025157;
+}
+
+.Who .gallery a{
+    text-align: left;
+    font-size: 17px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.Who button {
+    background: #025157;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: none;
+    margin-top: -50px;
+}
+
+.Who button:hover {
+    background: #67b54b;
+    cursor: pointer;
+}
