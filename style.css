@@ -3,9 +3,19 @@ body {
 }
 
 .header {
-    margin: 40px 20px 0px 20px;
+    margin: 20px;
     font-size: 0;
+    font-family: sans-serif;
 }
+
+.fixed-header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+  }
 
 h1 {
     color: #025157;
@@ -51,7 +61,7 @@ li {
     width: 15%;
 }
 
-.navbar {
+/* .navbar {
     position: relative;
     height: 45px;
     width: 60%;
@@ -60,7 +70,7 @@ li {
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
     padding: 1%;
-}
+} */
 
 .actions {
     text-align: right;
@@ -344,7 +354,7 @@ svg:not(:root) {
     background-color: #025157;
     padding: 5% 10%;
     display: grid;
-    height: 660px;
+    height: auto;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
@@ -423,7 +433,7 @@ svg:not(:root) {
     gap: 50px;
 }
 
-.Who .gallery>*{
+.Who .gallery>* {
     display: flex;
     box-shadow: 0px 0px 10px 1px #bababa;
     border-radius: 20px;
@@ -466,13 +476,13 @@ svg:not(:root) {
 
 .Who h3 {
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: 600;
     color: #025157;
 }
 
-.Who .gallery a{
+.Who .gallery a {
     text-align: left;
     font-size: 17px;
     color: #67b54b;
@@ -496,6 +506,7 @@ svg:not(:root) {
     padding-right: 20px;
     border-style: none;
     margin-top: -50px;
+    margin-bottom: 30px;
 }
 
 .Who button:hover {
@@ -503,8 +514,74 @@ svg:not(:root) {
     cursor: pointer;
 }
 
-@media (max-width: 800px) {
-    body{
-        background-color:  yellow;
+@media (max-width: 575px) {
+
+    /* .navbar, .actions{
+        display: none;
+    } */
+    h1 {
+        font-size: 30px;
+    }
+    .main{
+        margin-top: 60%;
+    }
+    .logo>img{
+        width: 70%;
+    }
+    .banner>img{
+        width: 100%;
+    }
+
+    .intro .publish>form{
+        flex-direction: column;
+    }
+
+    .intro .publish>form>div{
+        height:  50px;
+        margin-top: 10px;
+    }
+
+    .intro .publish>form>input{
+        width:65%;
+    }
+
+    .intro .publish{
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .intro .publish h2{
+        font-size: 25px;
+    }
+    
+    .intro .publish video{
+        width: 100%;
+    }
+
+    .grid {
+        padding: 5% 10%;
+        display: grid;
+        height: auto;
+        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+    }
+
+    .grid .grid-space .grid-image{
+        display: none;
+    }
+
+    .grid .grid-space .grid-content  {
+       text-align: center;
+    }
+
+    .grid .grid-space .grid-content p {
+        text-align: left;
+     }
+
+    .second{
+        flex-direction: column;
+    }
+
+     .Who .gallery {
+        grid-template: repeat(4, 1fr)/repeat(1,1fr);
     }
 }

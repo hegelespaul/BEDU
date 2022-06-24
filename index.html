@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
     <title>Matcha</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +16,14 @@
 </head>
 
 <body>
-    <section class="fixed-header">
+    <!-- <section class="fixed-header">
         <header class="header">
 
             <a href="/" class="logo">
                 <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha" />
             </a>
 
-            <!-- Menú de navegación -->
+           
             <nav class="navbar">
                 <ul>
                     <li>Products</li>
@@ -32,13 +35,51 @@
                 </ul>
             </nav>
 
-            <!-- Contenedor de acciones de usuario -->
+            
             <div class="actions">
                 <a href="/login">Sign In</a>
                 <button>Start free trial</button>
             </div>
         </header>
-    </section>
+    </section> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fffbf7">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" width="30" class="d-inline-block align-top" alt="Matcha"/>Matcha
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Platform</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+            </ul>
+    
+            <form class="form-inline my-2 my-lg-0 actions justify-content-end">
+              <div class="actions">
+                <a href="#">Sign In</a>
+                <button>Start Free Trial</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+
 
     <section class="main">
         <h1>Build your bussines</h1>
@@ -52,7 +93,10 @@
         <p>
             Start publishing today with a <strong>free 7-day trial.</strong>
         </p>
-        <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra">
+        <figure class="banner">
+            <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra">
+        </figure>
+
         <p>
             <strong>No credit space</strong> required.
         </p>
@@ -176,7 +220,7 @@
                     Join hundreds of ecommerce marketers and direct-to-consumer brands who rely on Matcha for blog
                     post
                     creation and optimization, reader conversion tools, and in-depth content analytics that empower
-                    their businesses to grow their traffic, engagement, email list, and sales with a
+                    their businesses to grow their traffic, engagement, email list, and sales.
                 </p>
                 <button class="btnwho">Who Uses Matcha?</button>
             </main>
@@ -318,7 +362,9 @@
     </section>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
