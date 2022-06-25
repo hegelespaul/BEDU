@@ -15,7 +15,7 @@ body {
     left: 0;
     right: 0;
     background-color: #fffbf7;
-  }
+}
 
 h1 {
     color: #025157;
@@ -197,7 +197,7 @@ svg:not(:root) {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 70%;
     flex-direction: row;
     margin: 100px auto;
@@ -514,14 +514,18 @@ svg:not(:root) {
     cursor: pointer;
 }
 
-.navbar > .container .navbar-brand,
-.navbar > .container-fluid .navbar-brand {
-  margin-left: 100px;
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 100px;
 }
 
-.navbar .btn-outline-success{
-margin-right: 100px;
-margin-left: 10px;
+.navbar .btn-outline-success {
+    margin-right: 100px;
+    margin-left: 10px;
+}
+
+.navbar #burgermenuitem{
+    display:none;
 }
 
 @media (max-width: 575px) {
@@ -532,39 +536,42 @@ margin-left: 10px;
     h1 {
         font-size: 30px;
     }
-    .main{
+
+    .main {
         margin-top: 60%;
     }
-    .logo>img{
+
+    .logo>img {
         width: 70%;
     }
-    .banner>img{
+
+    .banner>img {
         width: 100%;
     }
 
-    .intro .publish>form{
+    .intro .publish>form {
         flex-direction: column;
     }
 
-    .intro .publish>form>div{
-        height:  50px;
+    .intro .publish>form>div {
+        height: 50px;
         margin-top: 10px;
     }
 
-    .intro .publish>form>input{
-        width:65%;
+    .intro .publish>form>input {
+        width: 65%;
     }
 
-    .intro .publish{
+    .intro .publish {
         flex-direction: column;
         max-width: 90%;
     }
 
-    .intro .publish h2{
+    .intro .publish h2 {
         font-size: 25px;
     }
-    
-    .intro .publish video{
+
+    .intro .publish video {
         width: 100%;
     }
 
@@ -575,23 +582,54 @@ margin-left: 10px;
         grid-template: repeat(4, 1fr) / repeat(1, 1fr);
     }
 
-    .grid .grid-space .grid-image{
+    .grid .grid-space .grid-image {
         display: none;
     }
 
-    .grid .grid-space .grid-content  {
-       text-align: center;
+    .grid .grid-space .grid-content {
+        text-align: center;
     }
 
     .grid .grid-space .grid-content p {
         text-align: left;
-     }
+    }
 
-    .second{
+    .second {
         flex-direction: column;
     }
 
-     .Who .gallery {
-        grid-template: repeat(4, 1fr)/repeat(1,1fr);
+    .Who .gallery {
+        grid-template: repeat(4, 1fr)/repeat(1, 1fr);
+    }
+
+    .navbar .btn-outline-success {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+
+    .navbar #menunormalitem{
+        display:block;
+    }
+
+    .navbar #burgermenuitem{
+        display:none;
+    }
+    
+    .navbar button{
+        width:100%;
+        margin: 20px;
+    }
+
+    .second{
+        margin-top: -30px;
+    }
+
+    .intro  {
+        margin: 0px 10px 0px 10px;
     }
 }
