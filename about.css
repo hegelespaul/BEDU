@@ -1,0 +1,73 @@
+.navbar a {
+  color: #67b54b;
+}
+.navbar a:hover {
+  color: #025157;
+}
+
+.top-features {
+  padding: 30px 0 65px;
+  margin-top: 150px;
+}
+.top-features .arrow {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 65px;
+  transform: rotate(-90deg);
+  position: relative;
+  animation-name: arrowanim;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes arrowanim {
+  0% {
+    left: -33%;
+    top: 0;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    left: 33%;
+    top: 0;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h1 {
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+}
+
+.feature__img img {
+  width: 100%;
+}
+
+.feature__title__anchor {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 24px;
+}
+.feature__title__anchor .feature__title {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 35px;
+  text-decoration: none;
+  color: inherit;
+  transition: color 1.3s ease-in-out, font-size 1s ease-in-out;
+}
+.feature__title__anchor .feature__title:hover {
+  color: #67b54b;
+  font-size: 26px;
+}
+
+/*# sourceMappingURL=about.css.map */
